@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="tei_minimal.rng" 
+type="application/xml" 
+schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="statement">The tragedy of Romeo and Juliet </title>
+            <author> William Shakespeare </author>
+            <editor> Barbara A. Mowat </editor>
+            <editor> Paul Werstine </editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher> 
+               <orgName ref= "https://www.simonandschuster.com/">Simon &amp; Schuster </orgName>
+            </publisher>
+            <date when="2011-08-02">2 August 2011 </date>
+            <authority> 
+               <orgName> "https://shakespeare.folger.edu/" Folger Shakespeare Company </orgName>
+            </authority>
+            <address>
+               <addrLine>201 E Capitol St SE</addrLine>
+               <addrLine>Washington, DC</addrLine>
+               <postCode>20003</postCode>
+            </address>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <author> William Shakespeare </author>
+               <title type="statement"> Mr. William Shakespeare's Comedies, Histories, &amp; Tragedies</title>
+               <title type="sub"> First Folio </title>
+               <publisher>
+                  <persName> Edward Blount </persName>
+                  <persName> William Jaggard </persName>
+                  <persName> Isaac Jaggard </persName>
+               </publisher> 
+               <date type="canonical" when="1623">1623</date>
+               <pubPlace>
+                  <settlement>London</settlement> <country>England</country> 
+               </pubPlace>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+   <profileDesc>
+      <particDesc>
+         <listPerson>
+            <person xml:id="romeo" sex="M">
+               <persName>Romeo</persName> 
+               <note>Son of Montague, falls in love with Juliet.</note>
+            </person>
+            <person xml:id="juliet" sex="F">
+               <persName>Juliet</persName>
+               <note>Daughter of Capulet, falls in love with Romeo.</note>
+            </person>
+            <person xml:id="mercutio" sex="M">
+               <persName>Mercutio</persName>
+               <note>Romeo’s close friend, known for his wit.</note>
+            </person>
+            <person xml:id="tybalt" sex="M"> 
+               <persName> tybalt</persName>
+               <note>Juliet’s cousin, hot-tempered and aggressive.</note>
+            </person>
+            <person xml:id="benvolio" sex="M">
+               <persName>Benvolio</persName>
+               <note>Romeo’s cousin and friend, a peacemaker.</note>
+            </person>
+            <person xml:id="capulet" sex="M">
+               <persName>Capulet</persName>
+               <note>Juliet’s father.</note>
+            </person>
+            <person xml:id="montague" sex="M">
+               <persName>Montague</persName>
+               <note>Romeo’s father.</note>
+            </person>
+            <person xml:id="prince" sex="M">
+               <persName>Prince Escalus</persName>
+               <note>The Prince of Verona, who maintains law and order.</note>
+            </person>
+            <person xml:id="sampson" sex="M">
+               <persName>Sampson</persName>
+               <note>Servant to Capulet.</note>
+            </person>
+            <person xml:id="gregory" sex="M">
+               <persName>Gregory</persName>
+               <note>Servant to Capulet.</note>
+            </person>
+            <person xml:id="abram" sex="M">
+               <persName>Abram</persName>
+               <note>Servant to Montague.</note>
+            </person>
+            <person xml:id="ladycapulet" sex="F">
+               <persName>Lady Capulet</persName>
+               <note>Juliet’s mother.</note>
+            </person>
+            <person xml:id="ladymontague" sex="F">
+               <persName>Lady Montague</persName>
+               <note>Romeo’s mother.</note>
+            </person>
+            <person xml:id="nurse" sex="F">
+               <persName>Nurse</persName>
+               <note>Juliet’s nurse and confidante.</note>
+            </person>
+            <person xml:id="paris" sex="M">
+               <persName>Paris</persName>
+               <note>A nobleman seeking to marry Juliet.</note>
+            </person>
+         </listPerson>
+      </particDesc>
+   </profileDesc>     
+</teiHeader>
+   <text type="play">
+      <front>
+         <div type="introduction">
+            <head>Introduction</head>
+            <p><hi>Romeo and Juliet</hi> is one of William Shakespeare’s most enduring tragedies, exploring themes of love,
+            fate, violence, and generational conflict. This TEI-encoded edition is based on the Folger Shakespeare Library version
+            (edited by Mowat and Werstine, 2011), and provides a structured digital representation of Act 1. It is intended for 
+            educational use, literary analysis, and digital humanities research.</p>
+         </div>
+      </front>
+      <body>
+         <div type="act" n="1">
+            <head>Act 1</head>
+            <div type="scene" n="1">
+               <head>Scene 1</head>
+               <stage>Verona. A public place.</stage>
+               <sp who="#sampson">
+                  <speaker>Sampson</speaker>
+                  <l n="1">Gregory, o’ my word, we’ll not carry coals.</l>
+               </sp>
+               <sp who="#gregory">
+                  <speaker>Gregory</speaker>
+                  <l n="2">No, for then we should be colliers.</l>
+               </sp>
+               <sp who="#sampson">
+                  <speaker>Sampson</speaker>
+                  <l n="3">I mean, an we be in choler, we’ll draw.</l>
+               </sp>
+               <sp who="#gregory">
+                  <speaker>Gregory</speaker>
+                  <l n="4">Ay, while you live, draw your neck out of the collar.</l>
+               </sp>
+               <sp who="#sampson">
+                  <speaker>Sampson</speaker>
+                  <l n="5">I strike quickly, being moved.</l>
+               </sp>
+               <sp who="#gregory">
+                  <speaker>Gregory</speaker>
+                  <l n="6">But thou art not quickly moved to strike.</l>
+               </sp>
+               <sp who="#sampson">
+                  <speaker>Sampson</speaker>
+                  <l n="7">A dog of the house of Montague moves me.</l>
+               </sp>
+               <sp who="#gregory">
+                  <speaker>Gregory</speaker>
+                  <l n="8">To move is to stir, and to be valiant is to stand: therefore, if thou art moved, thou runn’st away.</l>
+               </sp>
+               <sp who="#sampson">
+                  <speaker>Sampson</speaker>
+                  <l n="9">A dog of that house shall move me to stand: I will take the wall of any man or maid of Montague’s.</l>
+               </sp>
+               <sp who="#gregory">
+                  <speaker>Gregory</speaker>
+                  <l n="10">That shows thee a weak slave; for the weakest goes to the wall.</l>
+               </sp>
+               <sp who="#sampson">
+                  <speaker>Sampson</speaker>
+                  <l n="11">Tis true; and therefore women, being the weaker vessels, are ever thrust to the wall.
+                  Therefore I will push Montague’s men from the wall, and thrust his maids to the wall.</l>
+               </sp>
+               <sp who="#gregory">
+                  <speaker>Gregory</speaker>
+                  <l n="12">The quarrel is between our masters and us their men.</l>
+               </sp>
+               <sp who="#sampson">
+                  <speaker>Sampson</speaker>
+                  <l n="13">’Tis all one. I will show myself a tyrant: when I have fought with the men, I will be cruel
+                  with the maids—I will cut off their heads.</l>
+               </sp>
+               <sp who="#gregory">
+                  <speaker>Gregory</speaker>
+                  <l n="14">The heads of the maids?</l>
+               </sp>
+               <sp who="#sampson">
+                  <speaker>Sampson</speaker>
+                  <l n="15">Ay, the heads of the maids, or their maidenheads; take it in what sense thou wilt.</l>
+               </sp>
+               <sp who="#gregory">
+                  <speaker>Gregory</speaker>
+                  <l n="16">They must take it in sense that feel it.</l>
+               </sp>
+               <sp who="#sampson">
+                  <speaker>Sampson</speaker>
+                  <l n="17">Me they shall feel while I am able to stand: and ’tis known I am a pretty piece of flesh.</l>
+               </sp>
+               <sp who="#gregory">
+                  <speaker>Gregory</speaker>
+                  <l n="18">’Tis well thou art not fish; if thou hadst, thou hadst been poor-John. 
+                  Draw thy tool: here comes two of the house of the Montagues.</l>
+               </sp>
+
+               <stage>Enter Abram and another Servant.</stage>
+
+               <sp who="#sampson">
+                  <speaker>Sampson</speaker>
+                  <l n="19">My naked weapon is out: quarrel, I will back thee.</l>
+               </sp>
+               <sp who="#gregory">
+                  <speaker>Gregory</speaker>
+                  <l n="20">How? turn thy back and run?</l>
+               </sp>
+               <sp who="#sampson">
+                  <speaker>Sampson</speaker>
+                  <l n="21">Fear me not.</l>
+               </sp>
+               <sp who="#gregory">
+                  <speaker>Gregory</speaker>
+                  <l n="22">No, marry; I fear thee!</l>
+               </sp>
+               <sp who="#sampson">
+                  <speaker>Sampson</speaker>
+                  <l n="23">Let us take the law of our sides; let them begin.</l>
+               </sp>
+               <sp who="#gregory">
+                  <speaker>Gregory</speaker>
+                  <l n="24">I will frown as I pass by, and let them take it as they list.</l>
+               </sp>
+               <sp who="#sampson">
+                  <speaker>Sampson</speaker>
+                  <l n="25">Nay, as they dare. I will bite my thumb at them; which is a disgrace to them, if they bear it.</l>
+               </sp>
+               <sp who="#abram">
+                  <speaker>Abram</speaker>
+                  <l n="26">Do you bite your thumb at us, sir?</l>
+               </sp>
+               <sp who="#sampson">
+                  <speaker>Sampson</speaker>
+                  <l n="27">I do bite my thumb, sir.</l>
+               </sp>
+               <sp who="#abram">
+                  <speaker>Abram</speaker>
+                  <l n="28">Do you bite your thumb at us, sir?</l>
+               </sp>
+               <sp who="#gregory">
+                  <speaker>Gregory</speaker>
+                  <l n="29">Is the law of our side, if I say ay?</l>
+               </sp>
+               <sp who="#sampson">
+                  <speaker>Sampson</speaker>
+                  <l n="30">No.</l>
+               </sp>
+               <sp who="#gregory">
+                  <speaker>Gregory</speaker>
+                  <l n="31">No, sir, I do not bite my thumb at you, sir; but I bite my thumb, sir.</l>
+               </sp>
+
+               <stage>Enter Benvolio.</stage>
+
+               <sp who="#benvolio">
+                  <speaker>Benvolio</speaker>
+                  <l n="32">Part, fools! Put up your swords; you know not what you do.</l>
+               </sp>
+
+               <stage>Beats down their swords.</stage>
+
+               <sp who="#tybalt">
+                  <speaker>Tybalt</speaker>
+                  <l n="33">What, art thou drawn among these heartless hinds?</l>
+                  <l n="34">Turn thee, Benvolio, look upon thy death.</l>
+               </sp>
+               <sp who="#benvolio">
+                  <speaker>Benvolio</speaker>
+                  <l n="35">I do but keep the peace. Put up thy sword,</l>
+                  <l n="36">Or manage it to part these men with me.</l>
+               </sp>
+               <sp who="#tybalt">
+                  <speaker>Tybalt</speaker>
+                  <l n="37">What, drawn, and talk of peace! I hate the word,</l>
+                  <l n="38">As I hate hell, all Montagues, and thee.</l>
+                  <l n="39">Have at thee, coward!</l>
+               </sp>
+
+               <stage>They fight. Enter several of both houses, who join the fray; then enter Citizens with clubs.</stage>
+
+               <sp>
+                  <speaker>Citizens</speaker>
+                  <l n="40">Clubs, bills, and partisans! Strike! beat them down!</l>
+                  <l n="41">Down with the Capulets! Down with the Montagues!</l>
+               </sp>
+
+               <stage>Enter Capulet in his gown, and Lady Capulet.</stage>
+
+               <sp who="#capulet">
+                  <speaker>Capulet</speaker>
+                  <l n="42">What noise is this? Give me my long sword, ho!</l>
+               </sp>
+               <sp who="#ladycapulet">
+                  <speaker>Lady Capulet</speaker>
+                  <l n="43">A crutch, a crutch! Why call you for a sword?</l>
+               </sp>
+
+               <stage>Enter Montague and Lady Montague.</stage>
+
+               <sp who="#montague">
+                  <speaker>Montague</speaker>
+                  <l n="44">Thou villain Capulet!—Hold me not, let me go.</l>
+               </sp>
+               <sp who="#ladymontague">
+                  <speaker>Lady Montague</speaker>
+                  <l n="45">Thou shalt not stir one foot to seek a foe.</l>
+               </sp>
+
+               <stage>Enter Prince Escalus, with his train.</stage>
+
+               <sp who="#prince">
+                  <speaker>Prince</speaker>
+                  <l n="46">Rebellious subjects, enemies to peace,</l>
+                  <l n="47">Profaners of this neighbor-stainèd steel—</l>
+                  <l n="48">Will they not hear? What, ho! You men, you beasts,</l>
+                  <l n="49">That quench the fire of your pernicious rage</l>
+                  <l n="50">With purple fountains issuing from your veins,</l>
+                  <l n="51">On pain of torture, from those bloody hands</l>
+                  <l n="52">Throw your mistempered weapons to the ground</l>
+                  <l n="53">And hear the sentence of your movèd prince.</l>
+                  <l n="54">Three civil brawls, bred of an airy word</l>
+                  <l n="55">By thee, old Capulet, and Montague,</l>
+                  <l n="56">Have thrice disturbed the quiet of our streets</l>
+                  <l n="57">And made Verona’s ancient citizens</l>
+                  <l n="58">Cast by their grave-beseeming ornaments,</l>
+                  <l n="59">To wield old partisans in hands as old,</l>
+                  <l n="60">Cankered with peace, to part your cankered hate.</l>
+                  <l n="61">If ever you disturb our streets again,</l>
+                  <l n="62">Your lives shall pay the forfeit of the peace.</l>
+                  <l n="63">For this time, all the rest depart away:</l>
+                  <l n="64">You Capulet shall go along with me;</l>
+                  <l n="65">And Montague, come you this afternoon,</l>
+                  <l n="66">To know our farther pleasure in this case,</l>
+                  <l n="67">To old Free-town, our common judgment-place.</l>
+                  <l n="68">Once more, on pain of death, all men depart.</l>
+               </sp>
+
+               <stage>Exeunt all but Montague, Lady Montague, and Benvolio.</stage>
+
+               <sp who="#montague">
+                  <speaker>Montague</speaker>
+                  <l n="69">Who set this ancient quarrel new abroach?</l>
+                  <l n="70">Speak, nephew, were you by when it began?</l>
+               </sp>
+               <sp who="#benvolio">
+                  <speaker>Benvolio</speaker>
+                  <l n="71">Here were the servants of your adversary</l>
+                  <l n="72">And yours, close fighting ere I did approach:</l>
+                  <l n="73">I drew to part them: in the instant came</l>
+                  <l n="74">The fiery Tybalt, with his sword prepared,</l>
+                  <l n="75">Which, as he breathed defiance to my ears,</l>
+                  <l n="76">He swung about his head and cut the winds,</l>
+                  <l n="77">Who nothing hurt withal hissed him in scorn.</l>
+                  <l n="78">While we were interchanging thrusts and blows,</l>
+                  <l n="79">Came more and more and fought on part and part,</l>
+                  <l n="80">Till the Prince came, who parted either part.</l>
+               </sp>
+               <sp who="#montague">
+                  <speaker>Montague</speaker>
+                  <l n="81">O, where is Romeo? Saw you him to-day?</l>
+                  <l n="82">Right glad I am he was not at this fray.</l>
+               </sp>
+               <sp who="#benvolio">
+                  <speaker>Benvolio</speaker>
+                  <l n="83">Madam, an hour before the worshipped sun</l>
+                  <l n="84">Peered forth the golden window of the east,</l>
+                  <l n="85">A troubled mind drove me to walk abroad;</l>
+                  <l n="86">Where, underneath the grove of sycamore</l>
+                  <l n="87">That westward rooteth from the city’s side,</l>
+                  <l n="88">So early walking did I see your son:</l>
+                  <l n="89">Towards him I made, but he was ware of me</l>
+                  <l n="90">And stole into the covert of the wood:</l>
+                  <l n="91">I, measuring his affections by my own,</l>
+                  <l n="92">That most are busied when they’re most alone,</l>
+                  <l n="93">Pursued my humour not pursuing his,</l>
+                  <l n="94">And gladly shunned who gladly fled from me.</l>
+               </sp>
+               <sp who="#montague">
+                  <speaker>Montague</speaker>
+                  <l n="95">Many a morning hath he there been seen,</l>
+                  <l n="96">With tears augmenting the fresh morning dew,</l>
+                  <l n="97">Adding to clouds more clouds with his deep sighs;</l>
+                  <l n="98">But all so soon as the all-cheering sun</l>
+                  <l n="99">Should in the furthest east begin to draw</l>
+                  <l n="100">The shady curtains from Aurora’s bed,</l>
+                  <l n="101">Away from light steals home my heavy son</l>
+                  <l n="102">And private in his chamber pens himself,</l>
+                  <l n="103">Shuts up his windows, locks fair daylight out</l>
+                  <l n="104">And makes himself an artificial night:</l>
+                  <l n="105">Black and portentous must this humour prove,</l>
+                  <l n="106">Unless good counsel may the cause remove.</l>
+               </sp>
+               <sp who="#benvolio">
+                  <speaker>Benvolio</speaker>
+                  <l n="107">My noble uncle, do you know the cause?</l>
+               </sp>
+               <sp who="#montague">
+                  <speaker>Montague</speaker>
+                  <l n="108">I neither know it nor can learn of him.</l>
+               </sp>
+               <sp who="#benvolio">
+                  <speaker>Benvolio</speaker>
+                  <l n="109">Have you importuned him by any means?</l>
+               </sp>
+               <sp who="#montague">
+                  <speaker>Montague</speaker>
+                  <l n="110">Both by myself and many other friends:</l>
+                  <l n="111">But he, his own affections’ counsellor,</l>
+                  <l n="112">Is to himself—I will not say how true—</l>
+                  <l n="113">But to himself so secret and so close,</l>
+                  <l n="114">So far from sounding and discovery,</l>
+                  <l n="115">As is the bud bit with an envious worm,</l>
+                  <l n="116">Ere he can spread his sweet leaves to the air</l>
+                  <l n="117">Or dedicate his beauty to the sun.</l>
+                  <l n="118">Could we but learn from whence his sorrows grow,</l>
+                  <l n="119">We would as willingly give cure as know.</l>
+               </sp>
+
+               <stage>Enter Romeo.</stage>
+
+               <sp who="#benvolio">
+                  <speaker>Benvolio</speaker>
+                  <l n="120">See, where he comes: so please you, step aside;</l>
+                  <l n="121">I’ll know his grievance, or be much denied.</l>
+               </sp>
+               <sp who="#montague">
+                  <speaker>Montague</speaker>
+                  <l n="122">I would thou wert so happy by thy stay,</l>
+                  <l n="123">To hear true shrift. Come, madam, let’s away.</l>
+               </sp>
+
+               <stage>Exeunt Montague and Lady Montague.</stage>
+
+               <sp who="#benvolio">
+                  <speaker>Benvolio</speaker>
+                  <l n="124">Good morrow, cousin.</l>
+               </sp>
+               <sp who="#romeo">
+                  <speaker>Romeo</speaker>
+                  <l n="125">Is the day so young?</l>
+               </sp>
+               <sp who="#benvolio">
+                  <speaker>Benvolio</speaker>
+                  <l n="126">But new struck nine.</l>
+               </sp>
+               <sp who="#romeo">
+                  <speaker>Romeo</speaker>
+                  <l n="127">Ay me! sad hours seem long.</l>
+                  <l n="128">Was that my father that went hence so fast?</l>
+               </sp>
+               <sp who="#benvolio">
+                  <speaker>Benvolio</speaker>
+                  <l n="129">It was. What sadness lengthens Romeo’s hours?</l>
+               </sp>
+               <sp who="#romeo">
+                  <speaker>Romeo</speaker>
+                  <l n="130">Not having that which having makes them short.</l>
+               </sp>
+               <sp who="#benvolio">
+                  <speaker>Benvolio</speaker>
+                  <l n="131">In love?</l>
+               </sp>
+               <sp who="#romeo">
+                  <speaker>Romeo</speaker>
+                  <l n="132">Out—</l>
+               </sp>
+               <sp who="#benvolio">
+                  <speaker>Benvolio</speaker>
+                  <l n="133">Of love?</l>
+               </sp>
+               <sp who="#romeo">
+                  <speaker>Romeo</speaker>
+                  <l n="134">Out of her favour where I am in love.</l>
+               </sp>
+               <sp who="#benvolio">
+                  <speaker>Benvolio</speaker>
+                  <l n="135">Alas, that love, so gentle in his view,</l>
+                  <l n="136">Should be so tyrannous and rough in proof!</l>
+               </sp>
+               <sp who="#romeo">
+                  <speaker>Romeo</speaker>
+                  <l n="137">Alas, that love, whose view is muffled still,</l>
+                  <l n="138">Should without eyes see pathways to his will!</l>
+                  <l n="139">Where shall we dine? O me! What fray was here?</l>
+                  <l n="140">Yet tell me not, for I have heard it all.</l>
+                  <l n="141">Here’s much to do with hate, but more with love.</l>
+                  <l n="142">Why then, O brawling love! O loving hate!</l>
+                  <l n="143">O anything of nothing first created!</l>
+                  <l n="144">O heavy lightness! Serious vanity!</l>
+                  <l n="145">Misshapen chaos of well-seeming forms!</l>
+                  <l n="146">Feather of lead, bright smoke, cold fire, sick health!</l>
+                  <l n="147">Still-waking sleep, that is not what it is!</l>
+                  <l n="148">This love feel I, that feel no love in this.</l>
+                  <l n="149">Dost thou not laugh?</l>
+               </sp>
+               <sp who="#benvolio">
+                  <speaker>Benvolio</speaker>
+                  <l n="150">No, coz, I rather weep.</l>
+               </sp>
+               <sp who="#romeo">
+                  <speaker>Romeo</speaker>
+                  <l n="151">Good heart, at what?</l>
+               </sp>
+               <sp who="#benvolio">
+                  <speaker>Benvolio</speaker>
+                  <l n="152">At thy good heart’s oppression.</l>
+               </sp>
+               <sp who="#romeo">
+                  <speaker>Romeo</speaker>
+                  <l n="153">Why, such is love’s transgression.</l>
+                  <l n="154">Griefs of mine own lie heavy in my breast,</l>
+                  <l n="155">Which thou wilt propagate to have it pressed</l>
+                  <l n="156">With more of thine. This love that thou hast shown</l>
+                  <l n="157">Doth add more grief to too much of mine own.</l>
+                  <l n="158">Love is a smoke raised with the fume of sighs;</l>
+                  <l n="159">Being purged, a fire sparkling in lovers’ eyes;</l>
+                  <l n="160">Being vexed, a sea nourished with lovers’ tears.</l>
+                  <l n="161">What is it else? A madness most discreet,</l>
+                  <l n="162">A choking gall, and a preserving sweet.</l>
+                  <l n="163">Farewell, my coz.</l>
+               </sp>
+               <sp who="#benvolio">
+                  <speaker>Benvolio</speaker>
+                  <l n="164">Soft! I will go along:</l>
+                  <l n="165">An if you leave me so, you do me wrong.</l>
+               </sp>
+               <sp who="#romeo">
+                  <speaker>Romeo</speaker>
+                  <l n="166">Tut, I have lost myself; I am not here;</l>
+                  <l n="167">This is not Romeo, he’s some other where.</l>
+               </sp>
+               <sp who="#benvolio">
+                  <speaker>Benvolio</speaker>
+                  <l n="168">Tell me in sadness, who is that you love?</l>
+               </sp>
+               <sp who="#romeo">
+                  <speaker>Romeo</speaker>
+                  <l n="169">What, shall I groan and tell thee?</l>
+               </sp>
+               <sp who="#benvolio">
+                  <speaker>Benvolio</speaker>
+                  <l n="170">Groan? why, no. But sadly tell me who.</l>
+               </sp>
+               <sp who="#romeo">
+                  <speaker>Romeo</speaker>
+                  <l n="171">Bid a sick man in sadness make his will—</l>
+                  <l n="172">Ah, word ill urged to one that is so ill!—</l>
+                  <l n="173">In sadness, cousin, I do love a woman.</l>
+               </sp>
+               <sp who="#benvolio">
+                  <speaker>Benvolio</speaker>
+                  <l n="174">I aimed so near when I supposed you loved.</l>
+               </sp>
+               <sp who="#romeo">
+                  <speaker>Romeo</speaker>
+                  <l n="175">A right good markman! And she’s fair I love.</l>
+               </sp>
+               <sp who="#benvolio">
+                  <speaker>Benvolio</speaker>
+                  <l n="176">A right fair mark, fair coz, is soonest hit.</l>
+               </sp>
+               <sp who="#romeo">
+                  <speaker>Romeo</speaker>
+                  <l n="177">Well, in that hit you miss: she’ll not be hit</l>
+                  <l n="178">With Cupid’s arrow; she hath Dian’s wit;</l>
+                  <l n="179">And, in strong proof of chastity well armed,</l>
+                  <l n="180">From love’s weak childish bow she lives uncharmed.</l>
+                  <l n="181">She will not stay the siege of loving terms,</l>
+                  <l n="182">Nor bide th’ encounter of assailing eyes,</l>
+                  <l n="183">Nor ope her lap to saint-seducing gold:</l>
+                  <l n="184">O, she is rich in beauty, only poor</l>
+                  <l n="185">That when she dies, with beauty dies her store.</l>
+                  </sp>
+               <sp who="#benvolio">
+                  <speaker>Benvolio</speaker>
+                  <l n="186">Then she hath sworn that she will still live chaste?</l>
+                  </sp>
+               <sp who="#romeo">
+                  <speaker>Romeo</speaker>
+                  <l n="187">She hath, and in that sparing makes huge waste;</l>
+                  <l n="188">For beauty starved with her severity</l>
+                  <l n="189">Cuts beauty off from all posterity.</l>
+                  <l n="190">She is too fair, too wise, wisely too fair,</l>
+                  <l n="191">To merit bliss by making me despair:</l>
+                  <l n="192">She hath forsworn to love, and in that vow</l>
+                  <l n="193">Do I live dead, that live to tell it now.</l>
+               </sp>
+               <sp who="#benvolio">
+                  <speaker>Benvolio</speaker>
+                  <l n="194">Be ruled by me, forget to think of her.</l>
+               </sp>
+               <sp who="#romeo">
+                  <speaker>Romeo</speaker>
+                  <l n="195">O, teach me how I should forget to think!</l>
+               </sp>
+               <sp who="#benvolio">
+                  <speaker>Benvolio</speaker>
+                  <l n="196">By giving liberty unto thine eyes;</l>
+                  <l n="197">Examine other beauties.</l>
+               </sp>
+               <sp who="#romeo">
+                  <speaker>Romeo</speaker>
+                  <l n="198">’Tis the way</l>
+                  <l n="199">To call hers exquisite, in question more:</l>
+                  <l n="200">These happy masks that kiss fair ladies’ brows,</l>
+                  <l n="201">Being black, put us in mind they hide the fair;</l>
+                  <l n="202">He that is stricken blind cannot forget</l>
+                  <l n="203">The precious treasure of his eyesight lost:</l>
+                  <l n="204">Show me a mistress that is passing fair,</l>
+                  <l n="205">What doth her beauty serve but as a note</l>
+                  <l n="206">Where I may read who passed that passing fair?</l>
+                  <l n="207">Farewell: thou canst not teach me to forget.</l>
+               </sp>
+               <sp who="#benvolio">
+                  <speaker>Benvolio</speaker>
+                  <l n="208">I’ll pay that doctrine, or else die in debt.</l>
+               </sp>
+
+               <stage>Exeunt.</stage>
+               
+            </div>
+         </div>
+      </body>
+  </text>
+</TEI>
