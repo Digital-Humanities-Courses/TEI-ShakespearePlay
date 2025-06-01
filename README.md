@@ -1,6 +1,7 @@
 # TEI-ShakespearePlay 
 
 Romeo and Juliet TEI Encoding Project
+
 A project by Qendrese Buza and Rrona Abrashi, students at the University of Geneva.
 
 ## Project Overview
