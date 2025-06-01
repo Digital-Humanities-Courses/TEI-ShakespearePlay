@@ -32,7 +32,7 @@ This repository contains the following:
 We created a minimal TEI customization for drama by selecting the necessary modules (core, header, textstructure, and drama).
 
 ### Encoding:
-Acts 1 and 2 were encoded manually in XML using TEI elements like <div>, <sp>, <speaker>, <stage>, and more.
+Acts 1 and 2 were encoded manually in XML using TEI elements like 'div', 'sp', 'speaker', 'stage', and more.
 
 ### Validation:
 Each file was validated in Oxygen XML Editor using the custom Relax NG schema.
