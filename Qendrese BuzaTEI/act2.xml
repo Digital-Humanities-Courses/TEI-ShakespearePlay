@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="tei_minimal.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"> 
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="statement">The second act of the tragedy of Romeo and Juliet by William Shakespeare</title>
+            <author>William Shakespeare</author>
+            <editor>Barbara A.Mowat</editor>
+            <editor>Paul Werstine</editor>
+         </titleStmt>
+         <publicationStmt>
+            <publisher> 
+               <orgName ref="https://www.simonandschuster.com/">Simon and Schuster</orgName>  
+            </publisher>
+            <date when="2011-02-08">2 August 2011</date>  
+            <authority>
+               <orgName ref="https://shakespeare.folger.edu/">Folger Shakespeare Library</orgName>
+            </authority>
+            <address>
+               <addrLine>201 East Capitol Street SE</addrLine>
+               <addrLine>Washington,DC</addrLine>
+                  <postCode>200003</postCode>
+            </address>
+         </publicationStmt>
+
+         <sourceDesc>
+            <bibl>
+               <author>Shakespeare, William, 1564-1616.</author>
+               <title type="statement">Mr. William Shakespeares comedies, histories, &amp; tragedies.</title>
+               <title type="distinctive">First Folio</title> 
+               <pubPlace>
+                  <settlement>Washington,DC</settlement>, <country>United States</country>
+               </pubPlace>
+               <publisher>
+               <persName>William Jaggard</persName>, <persName>Edward
+                  Blount</persName>, <persName>Isaac Jeggard</persName>
+               </publisher>
+               <date> type="canonical" when="1623"</date>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson> 
+               <person xml:id="romeo">
+                  <persName>Romeo</persName>
+               </person>
+               <person xml:id="juliet">
+                  <persName>Juliet</persName>
+               </person>
+               <person xml:id="friar">
+                  <persName>Friar</persName>
+               </person>
+               <person xml:id="mercutio">
+                  <persName>Mercutio</persName>
+               </person>
+               <person xml:id="benvolio">
+                  <persName>Benvolio</persName>
+               </person>
+               <person xml:id="tybalt">
+                  <persName>Tybalt</persName>
+               </person>
+               <person xml:id="nurse">
+                  <persName>The Nurse</persName>
+               </person>
+               <person xml:id="paris">
+                  <persName>Paris</persName>
+               </person>
+               <person xml:id="lord_capulet">
+                  <persName>Lord Capulet</persName>
+               </person>
+               <person xml:id="lady_capulet">
+                  <persName>Lady Capulet</persName>
+               </person>
+               <person xml:id="lord_montague">
+                  <persName>Lord Montague</persName>
+               </person>
+               <person xml:id="lady_montague">
+                  <persName>Lady Montague</persName>
+               </person>
+            </listPerson>
+         </particDesc>
+      </profileDesc>
+   </teiHeader>
+  <text>
+      <body>
+         <div type="act" n="2">
+            <div type="scene" n="1">
+               <head>Act 2, Scene 1</head>
+               <stage>Enter Romeo alone</stage>
+
+               <sp who="#romeo">
+                  <speaker>Romeo</speaker>
+                  <l>Can I go forward when my heart is here?</l>
+                  <l>Turn back, dull earth, and find thy center out.</l>
+               </sp>
+
+               <stage>He climbs the wall and leaps down within it.</stage>
+
+               <stage>Enter<persName>Benvolio</persName> and <persName>Mercutio</persName>.</stage>
+
+               <sp who="#benvolio">
+                  <speaker>Benvolio</speaker>
+                  <l>Romeo! my cousin Romeo! Romeo!</l>
+               </sp>
+
+               <sp who="#mercutio">
+                  <speaker>Mercutio</speaker>
+                  <l>He is wise,</l>
+                  <l>And, on my life, hath stol'n him home to bed.</l>
+               </sp>
+
+               <sp who="#benvolio">
+                  <speaker>Benvolio</speaker>
+                  <l>He ran this way and leapt this orchard wall.</l>
+                  <l>Call, good Mercutio.</l>
+               </sp>
+               
+               <sp who="#mercutio">
+                  <speaker>Mercutio</speaker>
+                  <l>Nay, I'll conjure too.</l>
+                  <l>Romeo! Humors, madman, passion, lover!</l>
+                  <l>Appear thou in the likeness of a sigh.</l>
+                  <l>Speak but one rhyme, and I am satisfied:</l>
+                  <l>Cry but “Ay me!” pronounce but “love” and “dove.”</l>
+                  <l>Speak to my gossip Venus one fair word,</l>
+                  <l>One nicknamèd-rhyme of Rosalind and Romeo,</l>
+                  <l>Speak to her bosom; or if her maid be near,</l>
+                  <l>Call her but “sweetheart.”</l>
+                  <l>He heareth not, stirreth not, he moveth not.</l>
+                  <l>The ape is dead, and I must conjure him.—</l>
+                  <l>I conjure thee by Rosaline’s bright eyes,</l>
+                  <l>By her high forehead and her scarlet lip,</l>
+                  <l>By her fine foot, straight leg, and quivering thigh,</l>
+                  <l>And the demesnes that there adjacent lie,</l>
+                  <l>That in thy likeness thou appear to us.</l>
+               </sp>
+
+               <sp who="#benvolio">
+                  <speaker>Benvolio</speaker> 
+                  <l>An if he hear thee, thou wilt anger him</l>
+               </sp>
+
+               <sp who="mercutio">
+                  <speaker>Mercutio</speaker>
+                  <l>This cannot anger him. ’Twould anger him</l>
+                  <l>To raise a spirit in his mistress’ circle</l>
+                  <l>Of some strange nature, letting it there stand</l>
+                  <l>Till she had laid it and conjured it down.</l>
+                  <l>That were some spite; my invocation</l>
+                  <l>Is fair and honest: in his mistress’ name,</l>
+                  <l>I conjure only but to raise up him.</l>
+               </sp>
+
+               <sp who="benvolio"> 
+                  <speaker>Benvolio</speaker>
+                  <l>Come, he hath hid himself among these trees</l>
+                  <l>To be consorted with the humorous night.</l>
+                  <l>Blind is his love and best befits the dark.</l>
+               </sp>
+
+               <sp who="#mercutio">
+                  <speaker>Mercutio</speaker>
+                  <l>If love be blind, love cannot hit the mark.</l>
+                  <l>Now will he sit under a medlar tree</l>
+                  <l>And wish his mistress were that kind of fruit</l>
+                  <l>As maids call medlars when they laugh alone.—</l>
+                  <l>O Romeo, that she were, O that she were</l>
+                  <l>An open arse, thou a pop’rin pear!</l>
+                  <l>Romeo, good night. I’ll to my truckle bed.</l>
+                  <l>This field-bed is too cold for me to sleep.</l>
+                  <l>Come, shall we go?</l>
+               </sp>
+
+               <sp who="#benvolio">
+                  <speaker>Benvolio</speaker>
+                  <l>Go then, for ’tis in vain</l>
+                   <l>To seek him here that means not to be found.</l>
+               </sp>
+
+               <stage>They exit.</stage>
+            </div>
+
+            <div type="scene">
+               <head>SCENE 2. Capulet's orchard.</head>
+               <stage>Romeo comes forward.</stage>
+
+               <sp who="#romeo">
+                  <speaker>Romeo</speaker>
+                  <l>He jests at scars that never felt a wound.</l>
+                  <stage>Enter Juliet above at a window</stage>
+                  <l>But, soft! what light through yonder window breaks?</l>
+                  <l>It is the east, and Juliet is the sun.</l>
+                  <l>Arise, fair sun, and kill the envious moon,</l>
+                  <l>Who is already sick and pale with grief,</l>
+                  <l>That thou her maid art far more fair than she:</l>
+                  <l>Be not her maid, since she is envious;</l>
+                  <l>Her vestal livery is but sick and green</l>
+                  <l>And none but fools do wear it; cast it off.</l>
+                  <l>It is my lady, O, it is my love!</l>
+                  <l>O, that she knew she were!</l>
+                  <l>She speaks, yet she says nothing: what of that?</l>
+                  <l>Her eye discourses; I will answer it.</l>
+                  <l>I am too bold, ’tis not to me she speaks:</l>
+                  <l>Two of the fairest stars in all the heaven,</l>
+                  <l>Having some business, do entreat her eyes</l>
+                  <l>To twinkle in their spheres till they return.</l>
+                  <l>What if her eyes were there, they in her head?</l>
+                  <l>The brightness of her cheek would shame those stars,</l>
+                  <l>As daylight doth a lamp; her eyes in heaven</l>
+                  <l>Would through the airy region stream so bright</l>
+                  <l>That birds would sing and think it were not night.</l>
+                  <l>See, how she leans her cheek upon her hand!</l>
+                  <l>O, that I were a glove upon that hand,</l>
+                  <l>That I might touch that cheek!</l>
+               </sp>
+
+               <sp who="#juliet">
+                  <speaker>Juliet</speaker>
+                  <l>Ay me!</l>
+                  <l>She speaks:</l>
+                  <l>O, speak again, bright angel! for thou art</l>
+                  <l>As glorious to this night, being o’er my head</l>
+                  <l>As is a winged messenger of heaven</l>
+                  <l>Unto the white-upturned wondering eyes</l>
+                  <l>Of mortals that fall back to gaze on him</l>
+                  <l>When he bestrides the lazy-pacing clouds</l>
+                  <l>And sails upon the bosom of the air.</l>
+               </sp>
+
+               <sp who="#juliet">
+                  <speaker>Juliet</speaker>
+                  <l>O Romeo, Romeo, wherefore art thou Romeo? </l>
+                  <l>Deny thy father and refuse thy name,</l>
+                  <l>Or, if thou wilt not, be but sworn my love,</l>
+                  <l>And I'll no longer be a Capulet. </l>
+               </sp>
+
+               <sp who="#romeo">
+                  <speaker>Romeo</speaker>
+                  <l>Shall I hear more, or shall I speak at this?</l>
+               </sp>
+
+               <sp who="juliet">
+                  <speaker>Juliet</speaker>
+                  <l>'Tis by thy name that is my enemy.</l>
+                  <l>Thou art thyself, though not a Montague.</l>
+                  <l>What's Montague? It is nor hand, nor foot,</l>
+                  <l>Nor arm, nor face. O, be some other name</l>
+                  <l>Belonging to a man</l>
+                  <l>What's in a name?That which we call a rose</l>
+                  <l>By any other word would smell as sweet</l>
+                  <l>So Romeo would, were he not Romeo called,</l>
+                  <l>Retain that dear perfection which he owes</l>
+                  <l>Without that title. Romeo, doff thy name,</l>
+                  <l>And, for thy name, which is no part of thee</l>
+                  <l>Take all myself.</l>
+               </sp>
+
+               <sp who="#romeo">
+                  <speaker>Romeo</speaker>
+                  <l>I take thee at thy word</l>
+                  <l>Call me but love, and I'll be new baptized</l>
+                  <l>Henceforth I never will be Romeo</l>
+               </sp>
+
+               <sp who="#juliet">
+                  <speaker>Juliet</speaker>
+                  <l>What man art thou that, thus bescreen'd in night,</l>
+                  <l>So stumblest on my counsel?</l>
+               </sp>
+               <sp who="#romeo">
+                  <speaker>Romeo</speaker>
+                  <l>By a name</l>
+                  <l>I know not how to tell thee who I am:</l>
+                  <l>My name, dear saint, is hateful to myself,</l>
+                  <l>Because it is an enemy to thee;</l>
+                  <l>Had I it written, I would tear the word.</l>
+               </sp>
+
+               <sp who="#juliet">
+                  <speaker>Juliet</speaker>
+                  <l>My ears have not yet drunk a hundred words</l>
+                  <l>Of that tongue's utterance, yet I know the sound;</l>
+                  <l>Art thou not Romeo, and a Montague?</l>
+               </sp>
+
+               <sp who="#romeo">
+                  <speaker>Romeo</speaker>
+                  <l>Neither, fair maid, if either thee dislike.</l>
+               </sp>
+
+               <sp who="#juliet">
+                  <speaker>Juliet</speaker>
+                  <l>How camest thou hither, tell me, and wherefore?</l>
+                  <l>The orchard walls are high and hard to climb;</l>
+                  <l>And the place death, considering who thou art,</l>
+                  <l>If any of my kinsmen find thee here.</l>
+               </sp>
+
+               <sp who="#romeo">
+                  <speaker>Romeo</speaker>
+                  <l>With love's light wings did I o'erperch these walls;</l>
+                  <l>For stony limits cannot hold love out,</l>
+                  <l>And what love can do that dares love attempt;</l>
+                  <l>Therefore thy kinsmen are no stop to me.</l>
+               </sp>
+
+               <sp who="#juliet">
+                  <speaker>Juliet</speaker>
+                  <l>If they do see thee, they will murder thee.</l>
+               </sp>
+
+               <sp who="#romeo">
+                  <speaker>Romeo</speaker>
+                  <l>Alack, there lies more peril in thine eye</l>
+                  <l>Than twenty of their swords: look thou but sweet,</l>
+                  <l>And I am proof against their enmity.</l>
+               </sp>
+
+               <sp who="#juliet">
+                  <speaker>Juliet</speaker>
+                  <l>I would not for the world they saw thee here.</l>
+               </sp>
+
+                <sp who="#romeo">
+                  <speaker>Romeo</speaker>
+                  <l>I have night's cloak to hide me from their sight;</l>
+                  <l>And but thou love me, let them find me here:</l>
+                  <l>My life were better ended by their hate,</l>
+                  <l>Than death prorogued, wanting of thy love.</l>
+               </sp>
+
+               <sp who="#juliet">
+                  <speaker>Juliet</speaker>
+                  <l>By whose direction found'st thou out this place?</l>
+               </sp>
+
+               <sp who="#romeo">
+                  <speaker>Romeo</speaker>
+                  <l>By love, who first did prompt me to enquire;</l>
+                  <l>He lent me counsel and I lent him eyes.</l>
+                  <l>I am no pilot; yet, wert thou as far</l>
+                  <l>As that vast shore washed with the farthest sea,</l>
+                  <l>I should adventure for such merchandise</l>
+               </sp>
+               <sp who="#juliet">
+                  <speaker>Juliet</speaker>
+                  <l>Thou knowest the mask of night is on my face,</l>
+                  <l>Else would a maiden blush bepaint my cheek</l>
+                  <l>For that which thou hast heard me speak tonight</l>
+                  <l>Fain would I dwell on form; fain, fain deny</l>
+                  <l>What I have spoke. But farewell compliment.</l>
+                  <l>Dost thou love me? I know thou wilt say “Ay,”</l>
+                  <l>And I will take thy word. Yet, if thou swear’st</l>
+                  <l>Thou mayst prove false. At lovers’ perjuries,</l>
+                  <l>They say, Jove laughs. O gentle Romeo</l>
+                  <l>If thou dost love, pronounce it faithfully</l>
+                  <l>Or, if thou thinkest I am too quickly won,</l>
+                  <l>I’ll frown and be perverse and say thee nay,</l>
+                  <l>So thou wilt woo, but else not for the world.</l>
+                  <l>In truth, fair Montague, I am too fond,</l>
+                  <l>And therefore thou mayst think my havior light.</l>
+                  <l>But trust me, gentleman, I’ll prove more true</l>
+                  <l>Than those that have more coying to be strange</l>
+                  <l>I should have been more strange, I must confess,</l>
+                  <l>But that thou overheard’st ere I was ware</l>
+                  <l>My true-love passion. Therefore pardon me,</l>
+                  <l>And not impute this yielding to light love,</l>
+                  <l>Which the dark night hath so discoverèd.</l>
+               </sp>
+               <sp who="#romeo">
+                  <speaker>Romeo</speaker>
+                  <l>Lady, by yonder blessed moon I swear,</l>
+                  <l>That tips with silver all these fruit-tree tops,—</l>
+               </sp>
+
+               <sp who="#juliet">
+                  <speaker>Juliet</speaker>
+                  <l>O, swear not by the moon, the inconstant moon,</l>
+                  <l>That monthly changes in her circled orb,</l>
+                  <l>Lest that thy love prove likewise variable.</l>
+               </sp>
+
+               <sp who="#romeo">
+                  <speaker>Romeo</speaker>
+                  <l>What shall I swear by?</l>
+               </sp>
+
+               <sp who="#juliet">
+                  <speaker>Juliet</speaker>
+                  <l>Do not swear at all;</l>
+                  <l>Or if thou wilt, swear by thy gracious self,</l>
+                  <l>Which is the god of my idolatry,</l>
+                  <l>And I'll believe thee.</l>
+               </sp>
+
+               <sp who="#romeo">
+                  <speaker>Romeo</speaker>
+                  <l>If my heart's dear love—</l>
+               </sp>
+               <sp who="#juliet">
+                  <speaker>Juliet</speaker>
+                  <l>Well, do not swear: although I joy in thee,</l>
+                  <l>I have no joy of this contract to-night;</l>
+                  <l>It is too rash, too unadvised, too sudden;</l>
+                  <l>Too like the lightning, which doth cease to be</l>
+                  <l>Ere one can say it lightens. Sweet, good night!</l>
+                  <l>This bud of love, by summer's ripening breath,</l>
+                  <l>May prove a beauteous flower when next we meet.</l>
+                  <l>Good night, good night! as sweet repose and rest</l>
+                  <l>Come to thy heart as that within my breast!</l>
+               </sp>
+
+               <sp who="#romeo">
+                  <speaker>Romeo</speaker>
+                  <l>O, wilt thou leave me so unsatisfied?</l>
+               </sp>
+
+               <sp who="#juliet">
+                  <speaker>Juliet</speaker>
+                  <l>What satisfaction canst thou have to-night?</l>
+               </sp>
+
+               <sp who="#romeo">
+                  <speaker>Romeo</speaker>
+                  <l>The exchange of thy love’s faithful vow for mine.</l>
+               </sp>
+
+               <sp who="#juliet">
+                  <speaker>Juliet</speaker>
+                  <l>I gave thee mine before thou didst request it:</l>
+                  <l>And yet I would it were to give again.</l>
+               </sp>
+
+               <sp who="#romeo">
+                  <speaker>Romeo</speaker>
+                  <l>Wouldst thou withdraw it? for what purpose, love?</l>
+               </sp>
+
+               <sp who="#juliet">
+                  <speaker>Juliet</speaker>
+                  <l>But to be frank, and give it thee again.</l>
+                  <l>And yet I wish but for the thing I have:</l>
+                  <l>My bounty is as boundless as the sea,</l>
+                  <l>My love as deep; the more I give to thee,</l>
+                  <l>The more I have, for both are infinite.</l>
+               </sp>
+               <sp who="#romeo">
+                  <speaker>Romeo</speaker>
+                  <l>I hear some noise within; dear love, adieu!</l>
+                  <l>Anon, good nurse!—Sweet Montague, be true.</l>
+                  <l>Stay but a little, I will come again.</l>
+                  <l>O blessed, blessed night! I am afeard,</l>
+                  <l>Being in night, all this is but a dream,</l>
+                  <l>Too flattering-sweet to be substantial.</l>
+                  <stage>[Retiring]</stage>
+               </sp>
+               <stage>Enter Nurse</stage>
+
+               <sp who="#nurse">
+                  <speaker>Nurse</speaker>
+                  <l>Madam!</l>
+               </sp>
+               <sp who="#juliet">
+                  <speaker>Juliet</speaker>
+                  <l>I come anon.—But if thou meanest not well,</l>
+                  <l>I do beseech thee—</l>
+               </sp>
+               <sp who="#nurse">
+                  <speaker>Nurse</speaker>
+                  <l>Madam!</l>
+               </sp>
+               <sp who="#juliet">
+                  <speaker>Juliet</speaker>
+                  <l>To cease thy strife and leave me to my grief.</l>
+                  <l>Tomorrow will I send.</l>
+               </sp>
+               <sp who="romeo">
+                  <speaker>Romeo</speaker>
+                  <l>So thrive my soul</l>
+               </sp>
+               <sp who="#juliet">
+                  <speaker>Juliet</speaker>
+                  <l>A thousand times good night.</l>
+               </sp>
+               <sp who="romeo">
+                  <speaker>Romeo</speaker>
+                  <l>A thousand times the worse to want thy light</l>
+                  <l>books,</l>
+                  <l>But love from love, toward school with heavy looks</l>
+               </sp>
+
+               <stage>Enter Juliet above again</stage>
+               <sp who="#juliet">
+                  <speaker>Juliet</speaker>
+                  <l>Hist, Romeo, hist! O, for a falc’ner’s voice</l>
+                  <l>To lure this tassel-gentle back again!</l>
+                  <l>Bondage is hoarse and may not speak aloud,</l>
+                  <l>Else would I tear the cave where Echo lies</l>
+                  <l>And make her airy tongue more hoarse than mine</l>
+                  <l>With repetition of “My Romeo!”</l>
+               </sp>
+            </div> 
+               <trailer>FINISH</trailer>
+         </div>
+      </body>
+  </text>
+</TEI>
